@@ -1,0 +1,108 @@
+body {
+  margin: 0; /* Elimină marginile implicite ale body-ului */
+  height: 100vh; /* Înălțimea completă a viewport-ului */
+  display: flex; /* Activează Flexbox */
+  justify-content: center; /* Centrează pe orizontală */
+  align-items: center; /* Centrează pe verticală */
+  background-color: #f4f4f4; /* Fundal pentru pagină */
+}
+
+
+.login-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 5px 5px 8px hsla(0, 0%, 0%, 0.261);
+  background-color: #fff; /* Fundal alb pentru card */
+}
+
+.login-card .logo-card {
+  max-width: 20%;
+  margin: 5px auto;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-left: 37%;
+  box-shadow: 5px 5px 8px hsla(212, 60%, 46%, 0.427);
+
+}
+
+.login-card .register-text {
+  margin-top: 10px; /* Distanță față de buton */
+  font-size: 0.9rem; /* Dimensiune mai mică decât textul principal */
+  color: #666; /* Culoare neutră pentru text */
+  text-align: center; /* Aliniere centrală */
+  cursor: pointer; /* Schimbă cursorul pentru a sugera interacțiunea */
+  transition: color 0.3s ease;
+}
+
+.login-card .button-card {
+  height: 40px; /* O înălțime mai mare pentru o experiență mai confortabilă */
+  width: 100%; /* Lățimea butonului */
+  background-color: #007bffe3; /* Culoare de fundal pentru buton */
+  color: white; /* Text alb pentru contrast */
+  border: none; /* Elimină bordura implicită */
+  border-radius: 8px; /* Colțuri rotunjite pentru un design modern */
+  cursor: pointer; /* Icon de mână la hover */
+  font-size: 1rem; /* Dimensiune a textului prietenoasă */
+  text-align: center; /* Alinierea textului în centru */
+  line-height: 40px; /* Aliniere verticală folosind înălțimea */
+  transition: background-color 0.3s ease;
+  margin: 10px auto;
+  box-shadow: 0px 2px 5px hsla(212, 77%, 51%, 0.427);
+}
+
+
+/* Container principal pentru input-uri */
+.input-container {
+  display: flex;
+  flex-direction: column; /* Aranjează input-urile pe verticală */
+  gap: 16px; /* Spațiu între fiecare grup de input */
+  margin: 16px 0; /* Spațiu față de alte elemente */
+}
+
+/* Grup pentru fiecare input */
+.input-group {
+  display: flex;
+  flex-direction: column; /* Aranjează label-ul și input-ul pe verticală */
+  gap: 8px; /* Spațiu între label și input */
+}
+
+/* Stil pentru label */
+.input-label {
+  font-size: 109%;
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Gri închis pentru text */
+}
+
+/* Stil pentru input */
+.input-box {
+  width: 90%; /* Input-ul ocupă întreaga lățime disponibilă */
+  padding: 10px; /* Spațiu interior */
+  font-size: 1rem;
+  border: 1px solid #ccc; /* Bordură simplă */
+  border-radius: 4px; /* Colțuri rotunjite */
+  outline: none; /* Elimină conturul implicit */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Efect de tranziție */
+}
+
+/* Efect hover */
+.input-box:hover {
+  border-color: #007BFF; /* Albastru deschis la hover */
+}
+
+/* Efect focus */
+.input-box:focus {
+  border-color: #007BFF; /* Albastru deschis la focus */
+  box-shadow: 0 0 7px rgba(0, 123, 255, 0.3); /* Efect de strălucire */
+}
+
+.register-text {
+  font-size: 1.1rem; /* Crește dimensiunea fontului */
+  color: #007BFF; /* Albastru atractiv pentru text */
+  font-weight: bold; /* Face textul mai proeminent */
+  text-decoration: none; /* Elimină linia sub text */
+  cursor: pointer; /* Schimbă cursorul în mână la hover */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Adaugă un efect de tranziție */
+}
